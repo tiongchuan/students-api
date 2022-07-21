@@ -1,0 +1,36 @@
+{
+  "name": "students-api",
+  "version": "1.0.0",
+  "description": "1. Endpoints for Users - POST /register - POST /login",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js -p $PORT",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiongchuan/students-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiongchuan/students-api/issues"
+  },
+  "homepage": "https://github.com/tiongchuan/students-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.2"
+
+  },
+
+  "engines":{
+    "node":"16.9.0"
+  }
+}
