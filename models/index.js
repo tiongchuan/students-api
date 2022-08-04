@@ -11,8 +11,9 @@ import userModel from "./user.model.js"
 import viewEnrollmentModel from "./viewEnrollment.model.js"
 
 // Heroku DB Connection Configuration
-const sequelize = new Sequelize("d3h7qubveh7v55", "oglzwpqmpzdpif", "b3653cf05bb38c386c12ebc0f6f5bb6f666ded86e691e21fd8f5085d28d1968d", {
-  host: "ec2-3-217-14-181.compute-1.amazonaws.com",
+// for student-api (new)
+const sequelize = new Sequelize("d7v5sh72llqr1", "slzxsdysufvkpi", "a0967c03c620f77782d10e36d825e746e7c4d91edc455eeab111d016e7176948", {
+  host: "ec2-50-19-255-190.compute-1.amazonaws.com",
   dialect: "postgres",
   dialectOptions: {
     ssl: {
@@ -20,6 +21,17 @@ const sequelize = new Sequelize("d3h7qubveh7v55", "oglzwpqmpzdpif", "b3653cf05bb
     }
   }
 });
+
+// for student-database (old)
+// const sequelize = new Sequelize("d3h7qubveh7v55", "oglzwpqmpzdpif", "b3653cf05bb38c386c12ebc0f6f5bb6f666ded86e691e21fd8f5085d28d1968d", {
+//   host: "ec2-3-217-14-181.compute-1.amazonaws.com",
+//   dialect: "postgres",
+//   dialectOptions: {
+//     ssl: {
+//       rejectUnauthorized: false
+//     }
+//   }
+// });
 
 
 // Test connection function
